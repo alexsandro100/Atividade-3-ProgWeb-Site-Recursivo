@@ -1,0 +1,80 @@
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    flex-direction: row;
+    display: flex;
+    max-width: 100%;
+}
+.layer1{
+    min-width: 90%;
+    height: 60px;
+    background-color: grey;
+}
+
+.layer2{
+    width: 50%;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.layer3, .layer4{
+    width: 50%;
+}
+
+.layer2, .layer3, .layer4{
+    background-color: grey;
+}
+
+img{
+    max-width: 100%;
+}
+.layer3{
+    margin-right: 11.11%;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-top: 5%;
+}
+
+@media (max-width: 768px){
+    .flex{
+        flex-direction: column;
+    }
+    
+    .layer2{
+        width: 100%;
+    }
+    
+    .box{
+        display: flex;
+        width: 100%;
+    }
+
+    .layer3, .layer4{
+        max-width: 50%;
+    }
+
+    .layer3{
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 411px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .box{
+        display: block;
+    }
+
+    .layer3, .layer4{
+        min-width: 100%;
+    }
+}
